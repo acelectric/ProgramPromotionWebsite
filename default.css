@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(255, 248, 218);
+    margin: 0px;
+    font-family: "微軟正黑體";
+}
+.nav-bar {
+    background-color: rgb(39, 39, 39);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    z-index: 50;
+}
+.nav-item {
+    color: white;
+    height: 80px;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0px 30px;
+    float: left;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    line-height: 80px;
+}
+li {
+    list-style: none;
+}
+li:hover {
+    background-color: black;
+}
+h1 {
+    margin: 10px;
+    text-align: center;
+}
+hr {
+    border: 2px solid rgb(255, 218, 150);
+    width: 500px;
+}
+.nav-itemList {
+    float: right;
+    margin: 0px;
+}
+.container {
+    background-color: white;
+    width: 90%;
+    height: 1000px;
+    padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hamburger-menu {
+    height: 80px;
+    width: 80px;
+    margin-top: 22px;
+    float: right;
+    display: none;
+}
+
+.hamburger-line {
+    background-color: white;
+    width: 50px;
+    height: 3px;
+    margin-bottom: 12px;
+}

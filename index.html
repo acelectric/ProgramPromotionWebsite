@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 設定編碼utf-8 -->
+        <meta charset="utf-8">
+        <!-- RWD設計 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>程式推廣</title>
+        <!-- 引入JQuery -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
+        <link rel="stylesheet" href="default.css" type="text/css">
+        <link rel="stylesheet" href="RWD.css" type="text/css">
+        <script type="text/Javascript">
+            window.onload=function() {
+                
+            };
+            function toggleMenu() {
+                var menu = document.getElementById("nav-itemList");
+                if(menu.style.display == "block")
+                {
+                    menu.style.display="none";
+                } else {
+                    menu.style.display="block";
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+
+        <div class="nav-bar">
+            <a href="index.html" style="padding: 0px 30px;">程式推廣</a>
+            <ul id="nav-itemList" class="nav-itemList">
+                <li class="nav-item"><a href="">學程式</a></li>
+                <li class="nav-item"><a href="">練題目</a></li>
+                <li class="nav-item"><a href="">實用教學</a></li>
+            </ul>
+            <div class="hamburger-menu" onclick="toggleMenu();">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>程式語言簡介</h1>
+            <hr>
+            <p>
+                <div class="video-container">
+                    <iframe width="806" height="453" src="https://www.youtube.com/embed/iZ9W2nPKIwU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </p>
+        </div>
+
+    </body>
+</html>
